@@ -9,9 +9,9 @@
 | encypted_password | string | null: false |
 
 ### Association
-has_many :rooms_users
-has_many :rooms, through: room_users
-has_many :messages
+- has_many :rooms_users
+- has_many :rooms, through: room_users
+- has_many :messages
 
 ## rooms テーブル
 
@@ -21,9 +21,9 @@ has_many :messages
 
 ### Association
 
-has_many :rooms_user
-has_many :users, through: :room_users
-has_many :messages
+- has_many :rooms_user
+- has_many :users, through: :room_users
+- has_many :messages
 
 ## room_users テーブル
 
@@ -34,8 +34,8 @@ has_many :messages
 
 ### Association
 
-belongs_to :user
-belongs_to :room
+- belongs_to :user
+- belongs_to :room
 
 ## messages テーブル
 
@@ -47,5 +47,5 @@ belongs_to :room
 
 ### Association
 
-belongs_to :user
-belongs_to :room
+- belongs_to :user
+- belongs_to :room
